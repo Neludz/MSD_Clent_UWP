@@ -1,0 +1,34 @@
+//config msd_2 
+ device 			MSD_2
+ default modbus address		1
+ max frame size (byte)		250
+
+*				impliment now:
+* 	 			reg_int16_ab, <-ab
+*        			reg_int32_abcd,
+*        			reg_float_abcd,
+*	C:\Users\allt\AppData\Local\Packages\Microsoft.SDKSamples.CustomSerialDeviceAccess.CS_8wekyb3d8bbwe\LocalState
+
+ modbus register:
+
+* name		address 	type
+ version	0		reg_int16_ab
+ T1		1		reg_int16_ab
+ T2		2		reg_int16
+ T3		3		reg_int16
+ T4		4		reg_int16
+ T5		5		reg_int16
+ T6		6		reg_int16
+ T7		7		reg_int16
+ T8		8		reg_int16
+ T9		9		reg_int16
+ test1		100		reg_int15
+ test2		2		reg_int16
+ test_3		3		reg_int16
+ test_4		4		reg_int16
+ test_4		5		reg_int16
+ test_9		17 		reg_int16
+ test_5		9 		reg_int16
+ test_8		15		reg_int16
+ test_8		120		reg_int32_abcd
+ test_8		29		reg_int16
